@@ -9,10 +9,10 @@ int main()
     cout << "wsad and q to exit. You must press enter to accepted\n" << endl;
     Controler controler;
 
-    string input="";
+    string input="sss";
     getline(cin,input);
     char c = input.c_str()[0];
-
+//    int i=0;
     while(!controler.get_input(c))
     {
         controler.print();

@@ -4,6 +4,7 @@
 Controler::Controler()
 {
     //ctor
+    board.new_item();
 }
 
 Controler::~Controler()
@@ -17,11 +18,12 @@ void Controler::print()
 }
 bool Controler::get_input(char input_key)
 {
-    bool b;
+    bool b=false;
     switch(input_key)
     {
     case 'w':
         b = board.up();
+        //std::cout<<b<<std::endl;
         if(board.win())
         {
             std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
@@ -36,6 +38,7 @@ bool Controler::get_input(char input_key)
         return false;
     case 's':
         b = board.down();
+        //std::cout<<b<<std::endl;
         if(board.win())
         {
             std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
@@ -53,6 +56,7 @@ bool Controler::get_input(char input_key)
         return false;
     case 'a':
         b = board.left();
+        //std::cout<<b<<std::endl;
         if(board.win())
         {
             std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
@@ -67,6 +71,7 @@ bool Controler::get_input(char input_key)
         return false;
     case 'd':
         b = board.right();
+        //std::cout<<b<<std::endl;
         if(board.win())
         {
             std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
@@ -80,6 +85,7 @@ bool Controler::get_input(char input_key)
         if(b) board.new_item();
         return false;
     case 'q':
+        std::cout<<"YOUR SCORE: "<<board.get_score()<<std::endl;
         return true;
     default:
         std::cout<<"Wrong input!!! Control key wsad press 'q' to exit \n";
