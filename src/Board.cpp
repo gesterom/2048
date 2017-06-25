@@ -1,5 +1,8 @@
 #include "Board.h"
+#include <time.h>
+#include <cstdlib>
 #include <iostream>
+#include <vector>
 
 Board::Board()
 {
@@ -32,6 +35,7 @@ void Board::right(){
             }
         }
     }
+    new_item();
 }
 void Board::left(){
     for(int i=0;i<4;i++){
@@ -42,6 +46,7 @@ void Board::left(){
             }
         }
     }
+    new_item();
 }
 void Board::up(){
     for(int i=3;i>0;i--){
@@ -52,6 +57,7 @@ void Board::up(){
             }
         }
     }
+    new_item();
 }
 
 void Board::down(){
@@ -63,8 +69,24 @@ void Board::down(){
             }
         }
     }
+    new_item();
 }
 
 void Board::new_item(){
-    tab[1][2]=2;
+//    struct pos{int x;int y;};
+//    std::vector<pos> v;
+//    for(int i=0;i<4;i++){
+//        for(int j=0;j<4;j++){
+//            if(tab[i][j]==0){
+//                pos temp;
+//                temp.x = i;
+//                temp.y = j;
+//                v.push_back(temp);
+//            }
+//        }
+//    }
+//    int m = rand()%v.size();
+//    pos temp2 = v[m];
+//    tab[temp2.x][temp2.y] = 2*(rand()%2+1);
+tab[1][1]=2;
 }

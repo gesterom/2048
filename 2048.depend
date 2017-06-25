@@ -1,11 +1,22 @@
 # depslib dependency file v1.0
-1498406779 source:/home/android-17/dysk/gesterom/projekty/2048/main.cpp
+1498409758 source:/home/android-17/dysk/gesterom/projekty/2048/main.cpp
 	<iostream>
-	<Board.h>
+	<Controler.h>
+	<termios.h>
 
-1498406413 source:/home/android-17/dysk/gesterom/projekty/2048/src/Board.cpp
+1498410147 source:/home/android-17/dysk/gesterom/projekty/2048/src/Board.cpp
 	"Board.h"
+	<time.h>
+	<cstdlib>
 	<iostream>
+	<vector>
 
 1498406380 /home/android-17/dysk/gesterom/projekty/2048/include/Board.h
+
+1498409648 /home/android-17/dysk/gesterom/projekty/2048/include/Controler.h
+	<Board.h>
+
+1498409669 source:/home/android-17/dysk/gesterom/projekty/2048/src/Controler.cpp
+	"Controler.h"
+	<iostream>
 
