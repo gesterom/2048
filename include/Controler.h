@@ -5,16 +5,16 @@
 
 class Controler
 {
-    public:
-        Controler();
-        bool get_input(char);
-        void print();
-        virtual ~Controler();
+public:
+    Controler();
+    bool get_input(char);
+    void print();
+    virtual ~Controler();
 
-    protected:
+protected:
 
-    private:
-        Board board;
+private:
+    Board board;
 };
 
 #endif // CONTROLER_H

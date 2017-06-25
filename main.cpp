@@ -13,7 +13,8 @@ int main()
     getline(cin,input);
     char c = input.c_str()[0];
 
-    while(!controler.get_input(c)){
+    while(!controler.get_input(c))
+    {
         controler.print();
         string input="";
         getline(cin,input);

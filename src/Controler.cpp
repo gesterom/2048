@@ -10,27 +10,74 @@ Controler::~Controler()
 {
     //dtor
 }
-void Controler::print(){
+void Controler::print()
+{
     board.print();
     std::cout<<std::endl;
 }
-bool Controler::get_input(char input_key){
-    switch(input_key){
+bool Controler::get_input(char input_key)
+{
+    bool b;
+    switch(input_key)
+    {
     case 'w':
-        board.up();
-        board.new_item();
+        b = board.up();
+        if(board.win())
+        {
+            std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(board.blocked())
+        {
+            std::cout<<"Game Over!!!\nYOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(b) board.new_item();
         return false;
     case 's':
-        board.down();
-        board.new_item();
+        b = board.down();
+        if(board.win())
+        {
+            std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(board.blocked())
+        {
+            std::cout<<"Game Over!!!\YOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(b)
+        {
+            board.new_item();
+        }
         return false;
     case 'a':
-        board.left();
-        board.new_item();
+        b = board.left();
+        if(board.win())
+        {
+            std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(board.blocked())
+        {
+            std::cout<<"Game Over!!!\nYOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(b) board.new_item();
         return false;
     case 'd':
-        board.right();
-        board.new_item();
+        b = board.right();
+        if(board.win())
+        {
+            std::cout<<"YOU WON\nYOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(board.blocked())
+        {
+            std::cout<<"Game Over!!!\nYOUR SCORE: "<<board.get_score()<<std::endl;
+            return true;
+        }
+        if(b) board.new_item();
         return false;
     case 'q':
         return true;

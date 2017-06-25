@@ -4,36 +4,40 @@
 
 class Board
 {
-    public:
-        Board();
-        bool up();
-        bool down();
-        bool left();
-        bool right();
+public:
+    Board();
+    bool up();
+    bool down();
+    bool left();
+    bool right();
 
-        void print();
+    void print();
 
-        //FIXME
-        void new_item();
+    //FIXME
+    void new_item();
+    bool blocked();
+    bool win();
+    int get_score();
 
-        virtual ~Board();
+    virtual ~Board();
 
-    protected:
+protected:
 
-    private:
-        int tab[4][4];
+private:
+    int tab[4][4];
+    int score;
 
-        bool gravity_up();
-        bool compres_up();
+    bool gravity_up();
+    bool compres_up();
 
-        bool gravity_down();
-        bool compres_down();
+    bool gravity_down();
+    bool compres_down();
 
-        bool compres_left();
-        bool gravity_left();
+    bool compres_left();
+    bool gravity_left();
 
-        bool compres_right();
-        bool gravity_right();
+    bool compres_right();
+    bool gravity_right();
 
 };
 

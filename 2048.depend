@@ -4,19 +4,19 @@
 	<Controler.h>
 	<termios.h>
 
-1498427330 source:/home/android-17/dysk/gesterom/projekty/2048/src/Board.cpp
+1498429731 source:/home/android-17/dysk/gesterom/projekty/2048/src/Board.cpp
 	"Board.h"
 	<time.h>
 	<cstdlib>
 	<iostream>
 	<vector>
 
-1498426941 /home/android-17/dysk/gesterom/projekty/2048/include/Board.h
+1498429173 /home/android-17/dysk/gesterom/projekty/2048/include/Board.h
 
 1498409648 /home/android-17/dysk/gesterom/projekty/2048/include/Controler.h
 	<Board.h>
 
-1498427367 source:/home/android-17/dysk/gesterom/projekty/2048/src/Controler.cpp
+1498429867 source:/home/android-17/dysk/gesterom/projekty/2048/src/Controler.cpp
 	"Controler.h"
 	<iostream>
 
