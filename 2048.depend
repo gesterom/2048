@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1498406779 source:/home/android-17/dysk/gesterom/projekty/2048/main.cpp
+	<iostream>
+	<Board.h>
+
+1498406413 source:/home/android-17/dysk/gesterom/projekty/2048/src/Board.cpp
+	"Board.h"
+	<iostream>
+
+1498406380 /home/android-17/dysk/gesterom/projekty/2048/include/Board.h
+
