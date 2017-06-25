@@ -6,12 +6,13 @@ class Board
 {
     public:
         Board();
-        void up();
-        void down();
-        void left();
-        void right();
+        bool up();
+        bool down();
+        bool left();
+        bool right();
 
         void print();
+
         //FIXME
         void new_item();
 
@@ -21,6 +22,18 @@ class Board
 
     private:
         int tab[4][4];
+
+        bool gravity_up();
+        bool compres_up();
+
+        bool gravity_down();
+        bool compres_down();
+
+        bool compres_left();
+        bool gravity_left();
+
+        bool compres_right();
+        bool gravity_right();
 
 };
 

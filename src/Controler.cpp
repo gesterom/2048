@@ -18,15 +18,19 @@ bool Controler::get_input(char input_key){
     switch(input_key){
     case 'w':
         board.up();
+        board.new_item();
         return false;
     case 's':
         board.down();
+        board.new_item();
         return false;
     case 'a':
         board.left();
+        board.new_item();
         return false;
     case 'd':
         board.right();
+        board.new_item();
         return false;
     case 'q':
         return true;
