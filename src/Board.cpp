@@ -12,6 +12,7 @@ Board::Board() {
 			tab[i][j]=0;
 		}
 	}
+	srand(time(NULL));
 }
 
 Board::~Board() {
